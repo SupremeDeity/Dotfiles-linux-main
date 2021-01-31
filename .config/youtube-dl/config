@@ -1,0 +1,8 @@
+# Extract Audio
+-x
+
+# Ignore Errors
+-i
+
+# Save all videos under Movies directory in your home directory
+-o ~/Music/%(title)s.%(ext)s

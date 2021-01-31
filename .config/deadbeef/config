@@ -1,3 +1,4 @@
+ape.write_apev2 1
 artwork.filemask *cover*.jpg;*front*.jpg;*folder*.jpg;*cover*.png;*front*.png;*folder*.png
 cli_add_playlist_name Default
 deadbeef_version 1.8.4
@@ -9,7 +10,7 @@ filebrowser.coverart_files cover.jpg;folder.jpg;front.jpg
 filebrowser.coverart_size 24
 filebrowser.defaultpath /home/mohsin/Music
 filebrowser.enabled 1
-filebrowser.expanded_rows 
+filebrowser.expanded_rows file:///home/mohsin/Music/Relax
 filebrowser.fgcolor 
 filebrowser.fgcolor_selected 
 filebrowser.filter 
@@ -25,8 +26,18 @@ filebrowser.sidebar_width 200
 filebrowser.sort_treeview 1
 filebrowser.treelines 0
 filechooser.lastdir file:///home/mohsin/Music/Relax
+gtkui.color.bar_background 13621 33924 58596
+gtkui.color.bar_foreground 36751 61680 42148
+gtkui.color.listview_even_row 15677 14392 17990
+gtkui.color.listview_odd_row 15677 14392 17990
+gtkui.color.listview_selection 13107 53713 31354
+gtkui.color.tabstrip_base 15677 14392 17990
+gtkui.color.tabstrip_light 9252 7967 12593
 gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
-gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } hsplitter locked=0 ratio=0.196193 pos=0 size2=0 {filebrowser {} vsplitter locked=0 ratio=0.750804 pos=0 size2=0 {vsplitter locked=0 ratio=0.000000 pos=0 size2=0 {tabstrip {} hsplitter locked=0 ratio=0.219780 pos=0 size2=0 {coverart {} playlist hideheaders=0 width=1 {} } } musical_spectrum {} } } } 
+gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 0" homogeneous=0 {playtb {} vsplitter locked=0 ratio=0.483607 pos=0 size2=0 {waveform_seekbar {} volumebar {} } volumebar {} } hsplitter locked=0 ratio=0.161786 pos=0 size2=0 {filebrowser {} vsplitter locked=0 ratio=0.750804 pos=0 size2=0 {vsplitter locked=0 ratio=0.045783 pos=0 size2=0 {tabstrip {} hsplitter locked=0 ratio=0.291705 pos=0 size2=0 {coverart {} playlist hideheaders=0 width=771 {} } } musical_spectrum {} } } } 
+gtkui.override_bar_colors 1
+gtkui.override_listview_colors 1
+gtkui.override_tabstrip_colors 1
 gtkui.statusbar.visible 1
 gtkui.tabscroll 0
 gtkui.titlebar_playing_tf %artist% - %title% - DeaDBeeF-%_deadbeef_version%
@@ -64,28 +75,77 @@ hotkey.key30 b 0 0 next
 hotkey.key31 n 0 0 playback_random
 hotkey.key32 "Ctrl k" 0 0 toggle_stop_after_album
 hotkeys_created 1
+logwindow.geometry.h 200
+logwindow.geometry.w 400
+logwindow.geometry.x 40
+logwindow.geometry.y 40
 mainwin.geometry.h 300
 mainwin.geometry.maximized 1
 mainwin.geometry.w 500
 mainwin.geometry.x 40
 mainwin.geometry.y 40
+mp3.id3v1_encoding iso8859-1
+mp3.id3v2_version 3
+mp3.write_id3v1 1
+mp3.write_id3v2 1
 network.proxy.port 8080
 output_plugin alsa
-playback.loop 1
-playback.volume 0.0000000
+playback.loop 2
+playback.volume -3.408813
 playlist.current 0
-playlist.cursor.0 0
+playlist.cursor.0 -1
 playlist.scroll.0 0
 playlist.scroll.cursorfollowplayback 1
-playlist.tab.00000 Default
+playlist.tab.00000 Relax
 prefwin.geometry.h 551
 prefwin.geometry.w 665
 prefwin.geometry.x 351
 prefwin.geometry.y 108
 resume.paused 0
-resume.playlist -1
-resume.position -1.000000
-resume.track -1
+resume.playlist 0
+resume.position 3.1739910
+resume.track 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
 streamer.samplerate_mult_48 48000
+trkproperties.geometry.h 400
+trkproperties.geometry.w 400
+trkproperties.geometry.x 510
+trkproperties.geometry.y 208
+waveform.bg_alpha 65535
+waveform.bg_color_b 17990
+waveform.bg_color_g 14392
+waveform.bg_color_r 15677
+waveform.border_width 1
+waveform.cache_enabled 1
+waveform.cursor_width 3
+waveform.display_rms 1
+waveform.display_ruler 0
+waveform.fg_alpha 65535
+waveform.fg_color_b 35209
+waveform.fg_color_g 58339
+waveform.fg_color_r 22359
+waveform.fg_rms_alpha 65535
+waveform.fg_rms_color_b 5000
+waveform.fg_rms_color_g 5000
+waveform.fg_rms_color_r 5000
+waveform.fill_waveform 1
+waveform.font_size 10
+waveform.log_enabled 0
+waveform.max_file_length 180
+waveform.mix_to_mono 1
+waveform.num_samples 2048
+waveform.pb_alpha 20000
+waveform.pb_color_b 0
+waveform.pb_color_g 65535
+waveform.pb_color_r 0
+waveform.refresh_interval 32
+waveform.render_method 2
+waveform.rlr_alpha 65535
+waveform.rlr_color_b 0
+waveform.rlr_color_g 0
+waveform.rlr_color_r 0
+waveform.scroll_enabled 1
+waveform.shade_waveform 1
+waveform.soundcloud_style 1
+wv.write_apev2 1
