@@ -6,3 +6,9 @@
 
 # Save all videos under Movies directory in your home directory
 -o ~/Music/%(title)s.%(ext)s
+
+# Always embed thumbnails
+--embed-thumbnail
+
+# Add Artist, album etc
+--add-metadata

@@ -1,5 +1,16 @@
 ape.write_apev2 1
+artwork.cache.period 48
+artwork.enable_albumartorg 0
+artwork.enable_embedded 1
+artwork.enable_lastfm 0
+artwork.enable_localfolder 1
+artwork.enable_musicbrainz 0
+artwork.enable_wos 0
 artwork.filemask *cover*.jpg;*front*.jpg;*folder*.jpg;*cover*.png;*front*.png;*folder*.png
+artwork.missing_artwork 1
+artwork.nocover_path 
+artwork.scale_towards_longer 0
+artwork.scaled.cache_reset_time 1612174017
 cli_add_playlist_name Default
 deadbeef_version 1.8.4
 filebrowser.autofilter 1
@@ -24,21 +35,30 @@ filebrowser.showhidden 0
 filebrowser.showicons 1
 filebrowser.sidebar_width 200
 filebrowser.sort_treeview 1
-filebrowser.treelines 0
+filebrowser.treelines 1
 filechooser.lastdir file:///home/mohsin/Music/Relax
+gtkui.autoresize_columns 0
 gtkui.color.bar_background 13621 33924 58596
 gtkui.color.bar_foreground 36751 61680 42148
-gtkui.color.listview_even_row 15677 14392 17990
+gtkui.color.listview_column_text 65535 65535 65535
+gtkui.color.listview_even_row 9252 7967 12593
+gtkui.color.listview_group_text 65535 65535 65535
 gtkui.color.listview_odd_row 15677 14392 17990
+gtkui.color.listview_playing_text 13621 33924 58596
 gtkui.color.listview_selection 13107 53713 31354
 gtkui.color.tabstrip_base 15677 14392 17990
 gtkui.color.tabstrip_light 9252 7967 12593
-gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
-gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 0" homogeneous=0 {playtb {} vsplitter locked=0 ratio=0.483607 pos=0 size2=0 {waveform_seekbar {} volumebar {} } volumebar {} } hsplitter locked=0 ratio=0.161786 pos=0 size2=0 {filebrowser {} vsplitter locked=0 ratio=0.750804 pos=0 size2=0 {vsplitter locked=0 ratio=0.045783 pos=0 size2=0 {tabstrip {} hsplitter locked=0 ratio=0.291705 pos=0 size2=0 {coverart {} playlist hideheaders=0 width=771 {} } } musical_spectrum {} } } } 
+gtkui.columns.playlist [{"title":"Item Index","id":"0","format":"","sort_format":"","size":"95","align":"2","color_override":"0","color":"#fff5c211"},{"title":"Album Art","id":"8","format":"","sort_format":"","size":"100","align":"0","color_override":"0","color":"#fff8f8f2"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"155","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"341","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"212","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.embolden_current_track 1
+gtkui.hide_remove_from_disk 1
+gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 0" homogeneous=0 {playtb {} vsplitter locked=0 ratio=0.483607 pos=0 size2=0 {waveform_seekbar {} volumebar {} } volumebar {} } hsplitter locked=0 ratio=0.161786 pos=0 size2=0 {filebrowser {} vsplitter locked=0 ratio=0.750804 pos=0 size2=0 {vsplitter locked=0 ratio=0.045783 pos=0 size2=0 {tabstrip {} hsplitter locked=0 ratio=0.291705 pos=0 size2=0 {coverart {} playlist hideheaders=0 width=770 {} } } musical_spectrum {} } } } 
+gtkui.name_playlist_from_folder 1
 gtkui.override_bar_colors 1
 gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 1
+gtkui.playlist.group_by_tf "%artist%"
 gtkui.statusbar.visible 1
+gtkui.statusbar_seltime 1
 gtkui.tabscroll 0
 gtkui.titlebar_playing_tf %artist% - %title% - DeaDBeeF-%_deadbeef_version%
 gtkui.titlebar_stopped_tf DeaDBeeF-%_deadbeef_version%
@@ -79,32 +99,90 @@ logwindow.geometry.h 200
 logwindow.geometry.w 400
 logwindow.geometry.x 40
 logwindow.geometry.y 40
-mainwin.geometry.h 300
+mainwin.geometry.h 711
 mainwin.geometry.maximized 1
-mainwin.geometry.w 500
-mainwin.geometry.x 40
-mainwin.geometry.y 40
+mainwin.geometry.w 683
+mainwin.geometry.x 0
+mainwin.geometry.y 27
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
 mp3.write_id3v2 1
+musical_spectrum.alignment 1
+musical_spectrum.amp_max 0
+musical_spectrum.amp_min -60
+musical_spectrum.bar_delay 100
+musical_spectrum.bar_falloff 100
+musical_spectrum.bar_w 0
+musical_spectrum.channel 262143
+musical_spectrum.color.background 0 0 0
+musical_spectrum.color.black_keys 0 0 0
+musical_spectrum.color.gradient_00 65535 0 0
+musical_spectrum.color.gradient_01 65535 32896 0
+musical_spectrum.color.gradient_02 65535 65535 0
+musical_spectrum.color.gradient_03 32896 65535 30840
+musical_spectrum.color.gradient_04 0 38036 41120
+musical_spectrum.color.gradient_05 0 8224 25700
+musical_spectrum.color.hgrid 21845 21845 21845
+musical_spectrum.color.ogrid 42148 0 0
+musical_spectrum.color.peaks 42148 0 0
+musical_spectrum.color.text 65535 65535 65535
+musical_spectrum.color.vgrid 21845 21845 21845
+musical_spectrum.color.white_keys 10240 10240 10240
+musical_spectrum.draw_style 0
+musical_spectrum.enable_amp 0
+musical_spectrum.enable_bar_mode 0
+musical_spectrum.enable_black_keys 0
+musical_spectrum.enable_bottom_labels 1
+musical_spectrum.enable_hgrid 1
+musical_spectrum.enable_left_labels 1
+musical_spectrum.enable_ogrid 0
+musical_spectrum.enable_peaks 1
+musical_spectrum.enable_peaks_color 0
+musical_spectrum.enable_right_labels 1
+musical_spectrum.enable_tooltip 1
+musical_spectrum.enable_top_labels 0
+musical_spectrum.enable_vgrid 1
+musical_spectrum.enable_white_keys 1
+musical_spectrum.fft_size 8192
+musical_spectrum.fill_spectrum 1
+musical_spectrum.font Sans 7
+musical_spectrum.font_tooltip Sans 9
+musical_spectrum.gaps 1
+musical_spectrum.gradient_orientation 0
+musical_spectrum.interpolate 1
+musical_spectrum.note_max 125
+musical_spectrum.note_min 0
+musical_spectrum.num_colors 6
+musical_spectrum.peak_delay 500
+musical_spectrum.peak_falloff 50
+musical_spectrum.pitch 440
+musical_spectrum.refresh_interval 25
+musical_spectrum.spacing 1
+musical_spectrum.transpose 0
+musical_spectrum.window 1
 network.proxy.port 8080
 output_plugin alsa
 playback.loop 2
-playback.volume -3.408813
-playlist.current 0
-playlist.cursor.0 -1
+playback.volume -14.00000
+playlist.current 1
+playlist.cursor.0 0
+playlist.cursor.1 18
+playlist.pin.groups 1
 playlist.scroll.0 0
+playlist.scroll.1 0
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Relax
+playlist.tab.00001 JPSongs
 prefwin.geometry.h 551
 prefwin.geometry.w 665
 prefwin.geometry.x 351
-prefwin.geometry.y 108
+prefwin.geometry.y 107
 resume.paused 0
-resume.playlist 0
-resume.position 3.1739910
-resume.track 0
+resume.playlist -1
+resume.position -1.000000
+resume.track -1
+resume_last_session 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
 streamer.samplerate_mult_48 48000
