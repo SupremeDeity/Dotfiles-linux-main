@@ -17,7 +17,6 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # startups
-polybar bar &
 picom &
 nitrogen --restore &
 dunst &
@@ -25,3 +24,5 @@ dunst &
 nm-applet &
 fcitx5 &
 lxsession &
+emacs --daemon &
+volumeicon &

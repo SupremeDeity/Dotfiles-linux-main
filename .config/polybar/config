@@ -40,7 +40,7 @@ font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
 font-4 = DejaVu Sans Mono
 
-modules-left = pulseaudio battery wifi 
+modules-left = battery wifi 
 modules-center = lxsession
 
 tray-position = right
