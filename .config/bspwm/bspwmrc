@@ -23,7 +23,6 @@ killall volumeicon
 
 # startups
 picom &
-nitrogen --restore &
 dunst &
 ~/.config/polybar/launch.sh
 nm-applet &
@@ -31,3 +30,4 @@ fcitx5 &
 lxsession &
 emacs --daemon &
 volumeicon &
+wal -i ~/Pictures/Wallpapers/ --backend schemer
