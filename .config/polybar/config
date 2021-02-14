@@ -2,8 +2,8 @@
 
 ;; ==================== COLORS ======================
 [colors]
-background = ${xrdb:color2}
-foreground = ${xrdb:color7}
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
 
 black       = #282a36
 red         = #ff5555
@@ -13,8 +13,8 @@ blue        = #6272a4
 magenta     = #ff79c6
 cyan        = #8be9fd
 white       = #f8f8f2
-accent      = ${xrdb:color15}
-accent2			= ${xrdb:color14}
+accent      = ${xrdb:color7}
+accent2		= ${xrdb:color2}
 
 ;; ===================== BARS ========================
 
@@ -51,7 +51,7 @@ tray-detached = true
 
 ; Tray icon max size
 tray-maxsize = 16
-tray-background = ${colors.foreground}
+tray-background = ${colors.accent2}
 
 wm-restack = bspwm
 override-redirect = true
@@ -290,7 +290,7 @@ date = %a, %d %B
 time = %I:%M %
 label-font = 2
 label = "  %date% | %time% "
-label-foreground = ${xrdb:color10}
+label-foreground = ${xrdb:accent}
 label-background = ${colors.accent2}
 
 [module/mpdee]

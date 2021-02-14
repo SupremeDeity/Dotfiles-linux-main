@@ -1,17 +1,17 @@
 configuration {
 /*	modi: "window,run,ssh";*/
-	width: 20;
+	width: 30;
 	lines: 15;
-/*	columns: 1;*/
-/*	font: "mono 12";*/
-/*	bw: 1;*/
+	columns: 1;
+	font: "FiraCode 12";
+	bw: 2;
 /*	location: 0;*/
-/*	padding: 5;*/
+	/*padding: 20;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
 	show-icons: true;
-/*	terminal: "rofi-sensible-terminal";*/
+	terminal: "alacritty";
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
 /*	run-command: "{cmd}";*/
@@ -27,12 +27,12 @@ configuration {
 /*	drun-url-launcher: "xdg-open";*/
 /*	disable-history: false;*/
 /*	ignored-prefixes: "";*/
-/*	sort: false;*/
+	sort: true;
 /*	sorting-method: "normal";*/
 /*	case-sensitive: false;*/
 /*	cycle: true;*/
 /*	sidebar-mode: false;*/
-/*	eh: 1;*/
+	eh: 1;
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
 /*	parse-known-hosts: true;*/
@@ -41,21 +41,21 @@ configuration {
 /*	tokenize: true;*/
 /*	m: "-5";*/
 /*	line-margin: 2;*/
-/*	line-padding: 1;*/
+	line-padding: 3;
 /*	filter: ;*/
 /*	separator-style: "dash";*/
-/*	hide-scrollbar: false;*/
+	hide-scrollbar: false;
 /*	fullscreen: false;*/
 /*	fake-transparency: false;*/
 /*	dpi: -1;*/
 /*	threads: 0;*/
-/*	scrollbar-width: 8;*/
+	scrollbar-width: 8;
 /*	scroll-method: 0;*/
 /*	fake-background: "screenshot";*/
 /*	window-format: "{w}    {c}   {t}";*/
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
-    theme: "slate";
+	theme: "~/.cache/wal/colors-rofi-dark";
 /*	color-normal: ;*/
 /*	color-urgent: ;*/
 /*	color-active: ;*/
@@ -150,4 +150,3 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
-@import "/usr/share/rofi/themes/Arc-Dark.rasi"
