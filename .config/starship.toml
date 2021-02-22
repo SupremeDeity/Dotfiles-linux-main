@@ -17,4 +17,4 @@ disabled = false
 deleted = "✘${count}"
 untracked = "?${count}"
 staged = '+${count}'
-format = "[{${deleted} ${staged} ${untracked}}](bold green)"
+format = '[|${deleted}| |${staged}| |${untracked}|](bold green)'

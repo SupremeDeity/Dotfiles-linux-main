@@ -24,7 +24,7 @@ killall volumeicon
 # startups
 picom &
 dunst &
-~/.config/polybar/launch.sh
+~/.config/polybar/launch.sh &
 nm-applet &
 fcitx5 &
 lxsession &

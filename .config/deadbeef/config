@@ -164,8 +164,8 @@ musical_spectrum.window 1
 network.proxy.port 8080
 output_plugin alsa
 playback.loop 1
-playback.volume -14.00000
-playlist.current 0
+playback.volume -27.33747
+playlist.current 1
 playlist.cursor.0 0
 playlist.cursor.1 12
 playlist.pin.groups 1

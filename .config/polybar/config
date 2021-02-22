@@ -14,7 +14,7 @@ magenta     = #ff79c6
 cyan        = #8be9fd
 white       = #f8f8f2
 accent      = ${xrdb:color7}
-accent2		= ${xrdb:color2}
+accent2			= ${xrdb:color2}
 
 ;; ===================== BARS ========================
 
@@ -112,6 +112,101 @@ modules-left = time bspwm
 wm-restack = bspwm
 override-redirect = true
 
+;; ====================== I3 BARS ======================
+[bar/right-i3]
+width = 33%
+height = 4%
+offset-x = 66%
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 2
+padding-right = 0
+
+font-0 = Scientifica:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-left = battery wifi 
+modules-center = lxsession
+
+tray-position = right
+; If true, the bar will not shift its
+; contents when the tray changes
+tray-detached = true
+
+; Tray icon max size
+tray-maxsize = 16
+tray-background = ${colors.accent2}
+
+wm-restack = i3
+override-redirect = true
+
+[bar/middle-i3]
+width = 20%
+height = 4%
+offset-x = 36%
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = Scientifica:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-center = title
+
+wm-restack = i3
+override-redirect = true
+
+[bar/left-i3]
+width = 27.1%
+height = 4%
+offset-x = 11
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 0
+padding-right = 0
+
+font-0 = Scientifica:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=8:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-left = time i3
+
+wm-restack = i3
+override-redirect = true
+
 ;; ====================== MODULES ==========================
 
 [module/bspwm]
@@ -120,7 +215,6 @@ type = internal/bspwm
 pin-workspaces = true
 enable-click = true
 enable-scroll = true
-
 format = <label-state>
 format-background = ${colors.background}
 format-foreground = ${colors.foreground}
@@ -143,31 +237,68 @@ label-empty = 
 
 [module/i3]
 type = internal/i3
-format = <label-state> <label-mode>
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = true
+
+; This will split the workspace name on ':'
+; Default: false
+strip-wsnumbers = true
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
 index-sort = true
+
+; Create click handler used to focus workspace
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle workspaces
+; Default: true
+enable-scroll = true
+
+; Wrap around when reaching the first/last workspace
+; Default: true
 wrapping-scroll = false
 
+; Set the scroll cycle direction 
+; Default: true
+reverse-scroll = false
+
+; Use fuzzy (partial) matching on labels when assigning 
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces 
+; containing 'code' in the label
+; Default: false
+fuzzy-match = true
+
+format = <label-state> <label-mode>
+
+label-mode = %mode%
 label-mode-padding = 2
-label-mode-foreground = ${colors.accent}
-label-mode-background = ${colors.background}
+label-mode-background = #e60053
 
 label-focused = %index%
+label-focused-foreground = ${colors.accent2}
 label-focused-background = ${colors.accent}
-label-focused-foreground = ${colors.background}
 label-focused-padding = 2
 
 label-unfocused = %index%
-label-unfocused-background = ${colors.background}
-label-unfocused-foreground = ${colors.accent}
 label-unfocused-padding = 2
 
 label-visible = %index%
-label-visible-background = ${colors.background}
-label-visible-foreground = ${colors.foreground}
+label-visible-background = ${colors.accent}
 label-visible-padding = 2
 
 label-urgent = %index%
-label-urgent-background = ${colors.red}
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
 label-urgent-padding = 2
 
 [module/wifi]
@@ -250,7 +381,7 @@ format = <label>
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-padding = 2
-format-fontseize = 13
+format-fontsize = 13
 scroll = true
 exec = ~/.bin/light.sh
 scroll-up = exec light -A 10
@@ -309,7 +440,7 @@ click-left = cd ~/bin && ./menu_powermenu.sh
 format-background = #89beba
 format-foreground = ${colors.background}
 format-padding = 2
-format-fontseize = 13
+format-fontsize = 13
 
 [module/polywins]
 type = custom/script
@@ -323,7 +454,7 @@ format-background = #72bbff
 
 [module/title]
 type = internal/xwindow
-label-empty = BSPWM
+label-empty = " "
 
 [module/ipc]
 ;; vim:ft=dosini
