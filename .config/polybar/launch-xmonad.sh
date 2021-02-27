@@ -1,8 +1,6 @@
 #!/bin/env sh
 
-pkill polybar
-
-sleep 1;
+killall polybar
 
 polybar middle-xmonad &
 polybar right-xmonad &

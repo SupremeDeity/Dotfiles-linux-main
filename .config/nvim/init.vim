@@ -83,6 +83,9 @@ Plug 'moll/vim-bbye'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Color Scheme
+Plug 'dylanaraps/wal.vim'
+
 " End of plugin section
 call plug#end()
 
@@ -94,7 +97,7 @@ autocmd VimEnter *
 
 colorscheme one " Color Scheme
 set number " Line numbers
-set background=dark " for the dark version
+"set background=dark " for the dark version
 set termguicolors
 
 " Airline Settings

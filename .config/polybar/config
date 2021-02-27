@@ -14,10 +14,10 @@ magenta     = #ff79c6
 cyan        = #8be9fd
 white       = #f8f8f2
 accent      = ${xrdb:color7}
-accent2		= ${xrdb:color2}
+accent2			= ${xrdb:color2}
 color3      = ${xrdb:color4}
 
-;; ===================== BARS ========================
+;; ===================== BSPWM BARS ========================
 
 [bar/right]
 width = 33%
@@ -36,7 +36,7 @@ module-margin-right = 0
 padding-left = 2
 padding-right = 0
 
-font-0 = Scientifica:style=Bold:size=11;3
+font-0 = Ubuntu Mono:style=Bold:size=11;3
 font-1 = Scientifica:style=Bold:size=13;3
 font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
@@ -65,7 +65,7 @@ offset-y = 5
 radius = 10
 fixed-center = true
 
-background = ${colors.background}
+background = ${colors.color3}
 foreground = ${colors.foreground}
 
 padding-left = 0
@@ -74,7 +74,7 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Scientifica:style=Bold:size=11;3
+font-0 = Ubuntu:style=Bold:size=11;3
 font-1 = Scientifica:style=Bold:size=13;3
 font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
@@ -103,7 +103,7 @@ padding-left = 0
 padding-right = 0
 
 font-0 = Scientifica:style=Bold:size=11;3
-font-1 = Scientifica:style=Bold:size=13;3
+font-1 = Jetbrains Mono:style=Bold:size=9:antialias=true;3
 font-2 = TerminessTTF Nerd Font:size=8:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
 font-4 = DejaVu Sans Mono
@@ -131,7 +131,7 @@ module-margin-right = 0
 padding-left = 2
 padding-right = 0
 
-font-0 = Scientifica:style=Bold:size=11;3
+font-0 = Ubuntu Mono:style=Bold:size=11;3
 font-1 = Scientifica:style=Bold:size=13;3
 font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
@@ -160,7 +160,7 @@ offset-y = 5
 radius = 10
 fixed-center = true
 
-background = ${colors.background}
+background = ${colors.color3}
 foreground = ${colors.foreground}
 
 padding-left = 0
@@ -169,7 +169,7 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Scientifica:style=Bold:size=11;3
+font-0 = Ubuntu:style=Bold:size=11;3
 font-1 = Scientifica:style=Bold:size=13;3
 font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
@@ -198,7 +198,7 @@ padding-left = 0
 padding-right = 0
 
 font-0 = Scientifica:style=Bold:size=11;3
-font-1 = Scientifica:style=Bold:size=13;3
+font-1 = Jetbrains Mono:style=Bold:size=9:antialias=true;3
 font-2 = TerminessTTF Nerd Font:size=8:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
 font-4 = DejaVu Sans Mono
@@ -226,7 +226,7 @@ module-margin-right = 0
 padding-left = 2
 padding-right = 0
 
-font-0 = Scientifica:style=Bold:size=11;3
+font-0 = Ubuntu Mono:style=Bold:size=11;3
 font-1 = Scientifica:style=Bold:size=13;3
 font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
@@ -254,7 +254,7 @@ offset-y = 5
 radius = 10
 fixed-center = true
 
-background = ${colors.background}
+background = ${colors.color3}
 foreground = ${colors.foreground}
 
 padding-left = 0
@@ -263,7 +263,7 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Scientifica:style=Bold:size=11;3
+font-0 = Ubuntu:style=Bold:size=11;3
 font-1 = Scientifica:style=Bold:size=13;3
 font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
@@ -291,7 +291,7 @@ padding-left = 0
 padding-right = 0
 
 font-0 = Scientifica:style=Bold:size=11;3
-font-1 = Scientifica:style=Bold:size=13;3
+font-1 = Jetbrains Mono:style=Bold:size=9:antialias=true;3
 font-2 = TerminessTTF Nerd Font:size=8:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
 font-4 = DejaVu Sans Mono
@@ -313,7 +313,7 @@ format-background = ${colors.background}
 format-foreground = ${colors.foreground}
 label-monitor = %name%
 label-focused-background = ${colors.accent}
-label-occupied-background = ${colors.background}
+label-occupied-background = ${colors.color3}
 label-urgent-background = ${colors.red}
 label-empty-background = ${colors.background}
 label-focused-foreground = ${colors.accent2}
@@ -323,10 +323,10 @@ label-urgent-padding = 2
 label-occupied-padding = 2
 label-empty-padding = 2
 
-label-focused = 
-label-occupied = 
-label-urgent = 
-label-empty = 
+label-focused = %index%
+label-occupied = %index%
+label-urgent = %index%
+label-empty = %index%
 
 [module/i3]
 type = internal/i3
@@ -578,7 +578,7 @@ date = %a, %d %B
 time = %I:%M %
 label-font = 2
 label = "  %date% | %time% "
-label-foreground = ${xrdb:accent}
+label-foreground = ${colors.accent}
 label-background = ${colors.accent2}
 
 [module/mpdee]
