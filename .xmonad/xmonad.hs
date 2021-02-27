@@ -139,7 +139,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) =
       ((modm, xK_comma), sendMessage (IncMasterN 1)),
       -- Deincrement the number of windows in the master area
       ((modm, xK_period), sendMessage (IncMasterN (-1))),
-      ((modm .|. shiftMask, xK_e), spawn "emacs"),
+      ((modm .|. shiftMask, xK_e), spawnOnce ("emacs &")),
       -- Toggle the status bar gap
       -- Use this binding with avoidStruts from Hooks.ManageDocks.
       -- See also the statusBar function from Hooks.DynamicLog.
@@ -161,15 +161,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) =
         | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9],
           (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]
       ]
-      ++
       --
       -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
       -- mod-shift-{w,e,r}, Move client to screen 1, 2, or 3
       --
-      [ ((m .|. modm, key), screenWorkspace sc >>= flip whenJust (windows . f))
-        | (key, sc) <- zip [xK_w, xK_e, xK_r] [0 ..],
-          (f, m) <- [(W.view, 0), (W.shift, shiftMask)]
-      ]
 
 ------------------------------------------------------------------------
 -- Mouse bindings: default actions bound to mouse events
@@ -287,10 +282,9 @@ infixr 5 :+
 --
 -- By default, do nothing.
 myStartupHook = do
-  spawnOnce "nitrogen --restore &"
   spawnOnce "picom &"
   spawnOnce "dunst &"
-  spawnOnce "~/.config/polybar/launch.sh &"
+  spawnOnce "~/.config/polybar/launch-xmonad.sh &"
   spawnOnce "nm-applet &"
   spawnOnce "fcitx5 &"
   spawnOnce "lxsession &"

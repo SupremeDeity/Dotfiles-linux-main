@@ -1,6 +1,6 @@
 #!/bin/env sh
 
-pkill polybar
+killall polybar
 
 sleep 1;
 
