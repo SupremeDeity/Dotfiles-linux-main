@@ -284,14 +284,13 @@ infixr 5 :+
 myStartupHook = do
   spawnOnce "picom &"
   spawnOnce "dunst &"
-  spawnOnce "~/.config/polybar/launch-xmonad.sh &"
   spawnOnce "nm-applet &"
   spawnOnce "fcitx5 &"
   spawnOnce "lxsession &"
   spawnOnce "emacs --daemon &"
   spawnOnce "volumeicon &"
-  spawnOnce "wal -i ~/Pictures/Wallpapers/ --backend schemer"
-
+  spawnOnce "~/.config/polybar/launch-xmonad.sh"
+  spawnOnce "wal -i ~/Pictures/Wallpapers/ --backend schemer &"
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 

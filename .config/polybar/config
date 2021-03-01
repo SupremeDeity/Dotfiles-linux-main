@@ -323,10 +323,10 @@ label-urgent-padding = 2
 label-occupied-padding = 2
 label-empty-padding = 2
 
-label-focused = 
-label-occupied = 
-label-urgent = 
-label-empty = 
+label-focused = %index%
+label-occupied = %index%
+label-urgent = %index%
+label-empty = %index%
 
 [module/i3]
 type = internal/i3
