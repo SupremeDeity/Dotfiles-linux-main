@@ -51,7 +51,7 @@ gtkui.color.tabstrip_light 9252 7967 12593
 gtkui.columns.playlist [{"title":"Item Index","id":"0","format":"","sort_format":"","size":"95","align":"2","color_override":"0","color":"#fff5c211"},{"title":"Album Art","id":"8","format":"","sort_format":"","size":"100","align":"0","color_override":"0","color":"#fff8f8f2"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"155","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"341","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"212","align":"0","color_override":"0","color":"#ff000000"}]
 gtkui.embolden_current_track 1
 gtkui.hide_remove_from_disk 1
-gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 0" homogeneous=0 {playtb {} vsplitter locked=0 ratio=0.483607 pos=0 size2=0 {waveform_seekbar {} volumebar {} } volumebar {} } hsplitter locked=0 ratio=0.161786 pos=0 size2=0 {filebrowser {} vsplitter locked=0 ratio=0.750804 pos=0 size2=0 {vsplitter locked=0 ratio=0.045783 pos=0 size2=0 {tabstrip {} hsplitter locked=0 ratio=0.291705 pos=0 size2=0 {coverart {} playlist hideheaders=0 width=773 {} } } musical_spectrum {} } } } 
+gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 0" homogeneous=0 {playtb {} vsplitter locked=0 ratio=0.483607 pos=0 size2=0 {waveform_seekbar {} volumebar {} } volumebar {} } hsplitter locked=0 ratio=0.161786 pos=0 size2=0 {filebrowser {} vsplitter locked=0 ratio=0.750804 pos=0 size2=0 {vsplitter locked=0 ratio=0.045783 pos=0 size2=0 {tabstrip {} hsplitter locked=0 ratio=0.291705 pos=0 size2=0 {coverart {} playlist hideheaders=0 width=765 {} } } musical_spectrum {} } } } 
 gtkui.name_playlist_from_folder 1
 gtkui.override_bar_colors 1
 gtkui.override_listview_colors 1
@@ -164,7 +164,7 @@ musical_spectrum.window 1
 network.proxy.port 8080
 output_plugin alsa
 playback.loop 1
-playback.volume -27.33747
+playback.volume -27.33745
 playlist.current 1
 playlist.cursor.0 0
 playlist.cursor.1 12
@@ -176,8 +176,8 @@ playlist.tab.00000 Relax
 playlist.tab.00001 JPSongs
 prefwin.geometry.h 551
 prefwin.geometry.w 665
-prefwin.geometry.x 351
-prefwin.geometry.y 107
+prefwin.geometry.x 348
+prefwin.geometry.y 106
 resume.paused 0
 resume.playlist -1
 resume.position -1.000000
