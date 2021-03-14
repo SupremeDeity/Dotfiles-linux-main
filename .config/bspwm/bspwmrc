@@ -32,4 +32,4 @@ fcitx5 &
 lxsession &
 emacs --daemon &
 volumeicon &
-wal -i ~/Pictures/Wallpapers/ --backend (random choice haishoku schemer)
+fish -c "wal -c && wal -i ~/Pictures/Wallpapers/ --backend (random choice haishoku schemer2)"
