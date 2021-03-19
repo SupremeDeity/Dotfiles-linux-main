@@ -198,7 +198,7 @@ padding-left = 0
 padding-right = 0
 
 font-0 = Scientifica:style=Bold:size=11;3
-font-1 = Jetbrains Mono:style=Bold:size=9:antialias=true;3
+font-1 = Jetbrains Mono:style=Bold:size=9:antialias=true3
 font-2 = TerminessTTF Nerd Font:size=8:antialias=true;3
 font-3 = Material Icons:size=15:antialias=true;3
 font-4 = DejaVu Sans Mono
@@ -501,8 +501,8 @@ format-full-padding-right = 2
 label-full-padding-right = 2
 label-discharging-padding-right = 2
 
-format-charging = "<animation-charging><label-charging>"
-format-discharging = "<ramp-capacity><label-discharging>"
+format-charging = "%{A2:exec ~/.config/polybar/scripts/batstatus.sh:}<animation-charging><label-charging>%{A}"
+format-discharging = "%{A2:exec ~/.config/polybar/scripts/batstatus.sh:}<ramp-capacity><label-discharging>%{A}"
 format-full-prefix = "  וֹ "
 format-full-prefix-foreground = ${colors.magenta}
 format-full-prefix-background = ${colors.background}
@@ -630,3 +630,4 @@ content-background = ${colors.background}
 content = 
 click-left = lxsession-logout
 ;; ======================== EOF ===========================
+;
