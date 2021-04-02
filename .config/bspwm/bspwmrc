@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV
+bspc monitor -d I II III IV V
 
 bspc config border_width         2
 bspc config window_gap          4
@@ -18,6 +18,8 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a idea state=floating
 
+xsetroot -cursor_name left_ptr
+
 # kill already open services that cause issues on re-executing
 killall dunst
 killall volumeicon
@@ -32,4 +34,6 @@ fcitx5 &
 lxsession &
 emacs --daemon &
 volumeicon &
+pamac-tray &
 fish -c "wal -c && wal -i ~/Pictures/Wallpapers/ --backend (random choice haishoku schemer2)"
+qlipper &

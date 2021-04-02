@@ -129,7 +129,7 @@ musical_spectrum.color.peaks 42148 0 0
 musical_spectrum.color.text 65535 65535 65535
 musical_spectrum.color.vgrid 21845 21845 21845
 musical_spectrum.color.white_keys 10240 10240 10240
-musical_spectrum.draw_style 0
+musical_spectrum.draw_style 1
 musical_spectrum.enable_amp 0
 musical_spectrum.enable_bar_mode 0
 musical_spectrum.enable_black_keys 0
@@ -162,15 +162,15 @@ musical_spectrum.spacing 1
 musical_spectrum.transpose 0
 musical_spectrum.window 1
 network.proxy.port 8080
-output_plugin alsa
-playback.loop 1
-playback.volume -27.33745
+output_plugin pulseaudio
+playback.loop 2
+playback.volume 0.0000000
 playlist.current 1
 playlist.cursor.0 0
-playlist.cursor.1 12
+playlist.cursor.1 48
 playlist.pin.groups 1
 playlist.scroll.0 0
-playlist.scroll.1 216
+playlist.scroll.1 2236
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Relax
 playlist.tab.00001 JPSongs
@@ -178,6 +178,7 @@ prefwin.geometry.h 551
 prefwin.geometry.w 665
 prefwin.geometry.x 348
 prefwin.geometry.y 106
+replaygain.preamp_with_rg 0.0000000
 resume.paused 0
 resume.playlist -1
 resume.position -1.000000
