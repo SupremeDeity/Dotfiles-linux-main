@@ -28,7 +28,6 @@ killall volumeicon
 wmname LG3D
 picom &
 dunst &
-~/.config/polybar/launch.sh &
 nm-applet &
 fcitx5 &
 lxsession &
@@ -37,3 +36,5 @@ volumeicon &
 pamac-tray &
 fish -c "wal -c && wal -i ~/Pictures/Wallpapers/ --backend (random choice haishoku schemer2)"
 qlipper &
+pgrep bspswallow || bspswallow &
+~/.config/polybar/launch.sh

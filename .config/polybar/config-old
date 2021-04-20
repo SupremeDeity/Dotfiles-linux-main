@@ -1,0 +1,633 @@
+;; ======================================= POLYBAR CONFIG ====================================
+
+;; ==================== COLORS ======================
+[colors]
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
+
+black       = #282a36
+red         = #ff5555
+green       = #50fa7b
+yellow      = #f1fa8c
+blue        = #6272a4
+magenta     = #ff79c6
+cyan        = #8be9fd
+white       = #f8f8f2
+accent      = ${xrdb:color7}
+accent2	= ${xrdb:color2}
+color3      = ${xrdb:color4}
+
+;; ===================== BSPWM BARS ========================
+
+[bar/right]
+width = 33%
+height = 4%
+offset-x = 66%
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 2
+padding-right = 0
+
+font-0 = Ubuntu Mono:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-left = battery wifi 
+modules-center = lxsession
+
+tray-position = right
+; If true, the bar will not shift its
+; contents when the tray changes
+tray-detached = true
+
+; Tray icon max size
+tray-maxsize = 16
+tray-background = ${colors.accent2}
+
+wm-restack = bspwm
+override-redirect = true
+
+[bar/middle]
+width = 20%
+height = 4%
+offset-x = 36%
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.color3}
+foreground = ${colors.foreground}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = Ubuntu:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-center = title
+
+wm-restack = bspwm
+override-redirect = false
+
+[bar/left]
+width = 27.1%
+height = 4%
+offset-x = 11
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 0
+padding-right = 0
+
+font-0 = Scientifica:style=Bold:size=11;3
+font-1 = Jetbrains Mono:style=Bold:size=9:antialias=true;3
+font-2 = TerminessTTF Nerd Font:size=8:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-left = time bspwm
+
+wm-restack = bspwm
+override-redirect = true
+
+;; ====================== I3 BARS ======================
+[bar/right-i3]
+width = 33%
+height = 4%
+offset-x = 66%
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 2
+padding-right = 0
+
+font-0 = Ubuntu Mono:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-left = battery wifi 
+modules-center = lxsession
+
+tray-position = right
+; If true, the bar will not shift its
+; contents when the tray changes
+tray-detached = true
+
+; Tray icon max size
+tray-maxsize = 16
+tray-background = ${colors.accent2}
+
+wm-restack = i3
+override-redirect = true
+
+[bar/middle-i3]
+width = 20%
+height = 4%
+offset-x = 36%
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.color3}
+foreground = ${colors.foreground}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = Ubuntu:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-center = title
+
+wm-restack = i3
+override-redirect = true
+
+[bar/left-i3]
+width = 27.1%
+height = 4%
+offset-x = 11
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 0
+padding-right = 0
+
+font-0 = Scientifica:style=Bold:size=11;3
+font-1 = Jetbrains Mono:style=Bold:size=9:antialias=true3
+font-2 = TerminessTTF Nerd Font:size=8:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-left = time i3
+
+wm-restack = i3
+override-redirect = true
+
+;; ====================== XMonad BARS ======================
+[bar/right-xmonad]
+width = 33%
+height = 4%
+offset-x = 66%
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 2
+padding-right = 0
+
+font-0 = Ubuntu Mono:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-left = battery wifi 
+modules-center = lxsession
+
+tray-position = right
+; If true, the bar will not shift its
+; contents when the tray changes
+tray-detached = true
+
+; Tray icon max size
+tray-maxsize = 16
+tray-background = ${colors.accent2}
+
+override-redirect = false
+
+[bar/middle-xmonad]
+width = 20%
+height = 4%
+offset-x = 36%
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.color3}
+foreground = ${colors.foreground}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = Ubuntu:style=Bold:size=11;3
+font-1 = Scientifica:style=Bold:size=13;3
+font-2 = TerminessTTF Nerd Font:size=15:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-center = title
+
+override-redirect = false
+
+[bar/left-xmonad]
+width = 27.1%
+height = 4%
+offset-x = 11
+offset-y = 5
+radius = 10
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+module-margin-left = 0
+module-margin-right = 0
+
+padding-left = 0
+padding-right = 0
+
+font-0 = Scientifica:style=Bold:size=11;3
+font-1 = Jetbrains Mono:style=Bold:size=9:antialias=true;3
+font-2 = TerminessTTF Nerd Font:size=8:antialias=true;3
+font-3 = Material Icons:size=15:antialias=true;3
+font-4 = DejaVu Sans Mono
+
+modules-left = time ewmh
+
+override-redirect = false
+
+;; ====================== MODULES ==========================
+
+[module/bspwm]
+type = internal/bspwm
+
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+format = <label-state>
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+label-monitor = %name%
+label-focused-background = ${colors.accent}
+label-occupied-background = ${colors.color3}
+label-urgent-background = ${colors.red}
+label-empty-background = ${colors.background}
+label-focused-foreground = ${colors.accent2}
+
+label-focused-padding = 2
+label-urgent-padding = 2
+label-occupied-padding = 2
+label-empty-padding = 2
+
+label-focused = %index%
+label-occupied = %index%
+label-urgent = %index%
+label-empty = %index%
+
+[module/i3]
+type = internal/i3
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = true
+
+; This will split the workspace name on ':'
+; Default: false
+strip-wsnumbers = true
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
+index-sort = true
+
+; Create click handler used to focus workspace
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle workspaces
+; Default: true
+enable-scroll = true
+
+; Wrap around when reaching the first/last workspace
+; Default: true
+wrapping-scroll = false
+
+; Set the scroll cycle direction 
+; Default: true
+reverse-scroll = false
+
+; Use fuzzy (partial) matching on labels when assigning 
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces 
+; containing 'code' in the label
+; Default: false
+fuzzy-match = true
+
+format = <label-state> <label-mode>
+
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-background = #e60053
+
+label-focused = %index%
+label-focused-foreground = ${colors.accent2}
+label-focused-background = ${colors.accent}
+label-focused-padding = 2
+
+label-unfocused = %index%
+label-unfocused-padding = 2
+
+label-visible = %index%
+label-visible-background = ${colors.accent}
+label-visible-padding = 2
+
+label-urgent = %index%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = 2
+
+[module/ewmh]
+type = internal/xworkspaces
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = false
+
+; This will split the workspace name on ':'
+; Default: false
+strip-wsnumbers = true
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
+index-sort = true
+
+; Create click handler used to focus workspace
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle workspaces
+; Default: true
+enable-scroll = true
+
+; Wrap around when reaching the first/last workspace
+; Default: true
+wrapping-scroll = false
+
+; Set the scroll cycle direction 
+; Default: true
+reverse-scroll = false
+
+; Use fuzzy (partial) matching on labels when assigning 
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces 
+; containing 'code' in the label
+; Default: false
+fuzzy-match = true
+
+format = <label-state>
+
+label-active = %index%
+label-active-foreground = ${colors.accent2}
+label-active-background = ${colors.accent}
+label-active-padding = 2
+
+label-occupied = %index%
+label-occupied-padding = 2
+label-occupied-background = ${colors.color3}
+label-occupied-foreground = ${colors.accent}
+
+label-empty = %index%
+label-empty-background = ${colors.background}
+label-empty-padding = 2
+
+label-urgent = %index%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = 2
+
+[module/wifi]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+tail = true
+
+format-connected = <ramp-signal><label-connected>
+format-connected-foreground = ${colors.foreground}
+format-connected-background = ${colors.background}
+format-connected-padding = 2
+label-connected = %downspeed:1:10%
+;;label-connected = %essid% | %downspeed:1:10% & %upspeed:1:10%
+label-connected-backgroun = ${colors.background}
+label-disconnected-padding = 2
+format-disconnected-prefix-padding = 2
+format-disconnected-prefix  = "睊"
+format-disconnected-prefix-foreground = ${colors.green}
+format-disconnected-prefix-background = ${colors.background}
+format-disconnected-foreground = ${colors.foreground}
+format-disconnected-background = ${colors.background}
+
+format-disconnected = "No-Wifi  "
+
+ramp-signal-0 = "直  "
+ramp-signal-foreground = ${colors.green}
+ramp-signal-background = ${colors.background}
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+
+battery = BAT0
+adapter = ADP0
+
+poll-interval = 2
+time-format = %H:%M
+
+format-charging-padding-right = 2
+format-full-padding-right = 2
+label-full-padding-right = 2
+label-discharging-padding-right = 2
+
+format-charging = "%{A2:exec ~/.config/polybar/scripts/batstatus.sh:}<animation-charging><label-charging>%{A}"
+format-discharging = "%{A2:exec ~/.config/polybar/scripts/batstatus.sh:}<ramp-capacity><label-discharging>%{A}"
+format-full-prefix = "  וֹ "
+format-full-prefix-foreground = ${colors.magenta}
+format-full-prefix-background = ${colors.background}
+label-full = "charged"
+label-full-background = ${colors.background}
+label-full-foreground = ${colors.foreground}
+label-charging-padding-right = 2
+label-charging-background = ${colors.background}
+label-charging-foreground = ${colors.foreground}
+label-discharging-foreground = ${colors.foreground}
+label-discharging-background = ${colors.background}
+
+ramp-capacity-0 = "  "
+ramp-capacity-1 = "  "
+ramp-capacity-2 = "  "
+ramp-capacity-3 = "  "
+ramp-capacity-4 = "  "
+ramp-capacity-5 = "  "
+ramp-capacity-padding-left = 2
+ramp-capacity-background = ${colors.background}
+ramp-capacity-foreground = ${colors.magenta}
+
+animation-charging-padding-left = 2
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-background = ${colors.background}
+animation-charging-foreground = ${colors.magenta}
+animation-charging-framerate = 750
+
+[module/xbacklight]
+type = internal/xbacklight
+format = <label>
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-padding = 2
+format-fontsize = 13
+scroll = true
+exec = ~/.bin/light.sh
+scroll-up = exec light -A 10
+scroll-down = exec light -U 10
+format-prefix-foreground = ${colors.red}
+format-prefix = "  "
+
+[module/lang]
+type = custom/script
+exec = ~/.bin/lang.sh
+format-padding = 2
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-prefix-padding = 0
+format-prefix = " "
+interval = 0.1
+format-prefix-foreground = ${colors.blue}
+format-prefix-background = ${colors.background}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <ramp-volume>  <label-volume>
+
+label-font = 2
+format-padding = 2
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+label-muted = 婢 muted
+click-right = pavucontrol
+
+[module/time]
+type = internal/date
+interval = 1
+date = %a, %d %B
+time = %I:%M %
+label-font = 2
+label = "  %date% | %time% "
+label-foreground = ${colors.accent}
+label-background = ${colors.accent2}
+
+[module/mpdee]
+type = internal/mpd
+format-online =  <label-song>
+format-online-background = ${colors.background}
+format-online-foreground = ${colors.yellow}
+format-online-padding = 2
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+[module/powermenu]
+type = custom/script
+exec = echo "襤"
+click-left = cd ~/bin && ./menu_powermenu.sh
+format-background = #89beba
+format-foreground = ${colors.background}
+format-padding = 2
+format-fontsize = 13
+
+[module/polywins]
+type = custom/script
+exec = ~/.config/polybar/scripts/polywins.sh 2>/dev/null
+format = <label>
+label = %output%
+label-padding = 1
+interval = .1
+format-foreground = ${colors.foreground}
+format-background = #72bbff
+
+[module/title]
+type = internal/xwindow
+label-empty = " "
+
+[module/ipc]
+;; vim:ft=dosini
+
+[module/updates-pacman]
+type = custom/script
+exec = ~/.config/polybar/scripts/pacman_updates.sh
+tail = true
+click-left = pkill -USR1 pacman_updates.sh
+
+[module/lxsession]
+type = custom/text
+exec = 
+content-foreground = ${colors.red}
+content-background = ${colors.background}
+content = 
+click-left = lxsession-logout
+;; ======================== EOF ===========================
+;

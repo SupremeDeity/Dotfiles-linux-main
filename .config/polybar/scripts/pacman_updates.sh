@@ -1,6 +1,6 @@
 #!/bin/sh
 
-STRING_TEMPLATE=' %s | %s\n'
+STRING_TEMPLATE='  P:%s A:%s\n'
 TMP_DIR=/tmp/updates_arch
 
 ! [ -d "$TMP_DIR" ] && mkdir "$TMP_DIR"

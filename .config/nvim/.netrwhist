@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/mohsin/Pictures'
 let g:netrw_dirhist_6='/home/mohsin/.config/bpytop'
 let g:netrw_dirhist_5='/home/mohsin/.config/bpytop/themes'
 let g:netrw_dirhist_4='/home/mohsin/.config/polybar'

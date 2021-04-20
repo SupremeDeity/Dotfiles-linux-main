@@ -29,7 +29,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 font-0 = "Ubuntu Mono:size=11;0"
-font-1 = "Material Icons:size=16;3"
+font-1 = "Material Icons:size=16;0"
 
 modules-left = time lxsession
 
@@ -40,7 +40,7 @@ override-redirect = false
 width = 10%
 height = 4%
 offset-x = 43.5%
-offset-y = 5
+offset-y = 1%
 radius = 10
 fixed-center = true
 
@@ -54,7 +54,7 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Material Icons:size=16:antialias=true;3
+font-0 = "Material Icons:size=16:antialias=true;0"
 
 modules-center = bspwm
 
@@ -79,7 +79,7 @@ padding-left = 1
 padding-right = 0
 
 font-0 = Ubuntu Mono:style=Bold:size=11;0
-font-1 = Material Icons:size=15:antialias=true;3
+font-1 = Material Icons:size=16:antialias=true;0
 font-2 = DejaVuSansMono Nerd Font Mono:size=15:antialias=true;0
 
 modules-left = battery wifi updates-pacman

@@ -27,7 +27,7 @@ super + shift + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
-super + {_,shift + }c
+super + {ctrl ,shift + }c
 	bspc node -{k,c}
 
 # alternate between the tiled and monocle layout
@@ -81,8 +81,8 @@ super + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-super + {_,shift + }{1-4,0}
-	bspc {desktop -f,node -d} '^{1-4,10}'
+super + {_,shift + }{1-5,0}
+	bspc {desktop -f,node -d} '^{1-5,10}'
 
 #
 # preselect
