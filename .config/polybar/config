@@ -80,7 +80,7 @@ padding-right = 0
 
 font-0 = Ubuntu Mono:style=Bold:size=11;0
 font-1 = Material Icons:size=15:antialias=true;3
-font-2 = DejaVuSansMono Nerd Font Mono:size=15:antialias=true;0
+font-2 = DejaVuSansMono Nerd Font Mono:size=15:antialias=true;2
 
 modules-left = battery wifi updates-pacman
 
@@ -96,8 +96,8 @@ date = %a, %d %B
 time = %I:%M %
 label-font = 0
 label = "  %date% | %time% "
-label-foreground = ${colors.background}
-label-background = ${colors.foreground}
+label-foreground = ${colors.accent}
+label-background = ${colors.accent2}
 
 [module/bspwm]
 type = internal/bspwm
@@ -113,15 +113,15 @@ format-foreground = ${colors.accent}
 label-active-font = 1
 label-monitor = %name%
 
-;;label-focused-background = ${colors.accent}
 label-focused-background = #00000000
-;;label-occupied-background = ${colors.color3}
 label-occupied-background = #00000000
-;;label-urgent-background = #00000000
 label-urgent-background = ${colors.red}
-;;label-empty-background = ${colors.color3}
 label-empty-background = #00000000
+
 label-focused-foreground = ${colors.accent2}
+label-occupied-foreground = ${colors.color3}
+label-urgent-foreground = ${colors.red}
+label-empty-foreground = ${colors.color3}
 
 label-focused = ""
 label-occupied = ""
