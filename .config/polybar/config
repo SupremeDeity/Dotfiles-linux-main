@@ -218,3 +218,9 @@ format-disconnected = "%{A1:networkmanager_dmenu:}No-Wifi%{A}  "
 ramp-signal-0 = "  "
 ramp-signal-foreground = ${colors.green}
 ramp-signal-background = ${colors.background}
+
+[module/popup-calendar]
+type = custom/script
+exec = ~/.config/polybar/scripts/popup-calendar.sh
+interval = 5
+click-left = ~/.config/polybar/scripts/popup-calendar.sh --popup &
