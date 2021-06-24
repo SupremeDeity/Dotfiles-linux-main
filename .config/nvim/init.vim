@@ -44,8 +44,6 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'voldikss/vim-floaterm'
 " Start Screen
 Plug 'mhinz/vim-startify'
-" Vista
-Plug 'liuchengxu/vista.vim'
 " See what keys do like in emacs
 Plug 'liuchengxu/vim-which-key'
 " Zen mode

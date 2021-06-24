@@ -22,6 +22,14 @@ super + Escape
 super + shift + e
 	emacs
 
+# File explorer
+super + shift + f
+	nautilus
+
+# Screenshot
+Print
+	flameshot gui
+
 # quit/restart bspwm
 super + shift + {q,r}
 	bspc {quit,wm -r}
